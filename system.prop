@@ -7,3 +7,13 @@ telephony.lteOnCdmaDevice=0
 ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.sf.lcd_density=160
+
+
+# Disable GC freed lines
+dalvik.vm.debug.alloc=0
+
+ro.device.cpu=Dual-core 1 GHz Cortex-A9
+ro.device.gpu=PowerVR SGX540
+ro.device.rear_cam=3.1 MP
+ro.device.front_cam=0.3 MP
+ro.device.screen_res=10.1 inch
