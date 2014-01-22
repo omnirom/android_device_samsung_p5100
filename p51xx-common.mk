@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2013 OmniROM Project
 # Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -35,7 +36,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.espresso10.usb.rc:root/init.espresso10.usb.rc \
     $(LOCAL_PATH)/rootdir/init.espresso10.rc:root/init.espresso10.rc \
     $(LOCAL_PATH)/rootdir/ueventd.espresso10.rc:root/ueventd.espresso10.rc \
-    $(LOCAL_PATH)/rootdir/fstab.espresso10:root/fstab.espresso10
+    $(LOCAL_PATH)/rootdir/fstab.espresso10:root/fstab.espresso10 \
+    $(LOCAL_PATH)/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -59,10 +61,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/usr/keychars/espresso-gpio-keypad.kcm:system/usr/keychars/espresso-gpio-keypad.kcm \
     $(LOCAL_PATH)/usr/keylayout/espresso-gpio-keypad.kl:system/usr/keylayout/espresso-gpio-keypad.kl \
     $(LOCAL_PATH)/usr/keylayout/sec_keyboard.kl:system/usr/keylayout/sec_keyboard.kl
-
-# TWRP
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Packages
 PRODUCT_PACKAGES += \

@@ -1,4 +1,5 @@
 #
+# Copyright (C) 2013 OmniROM Project
 # Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -126,6 +127,7 @@ TARGET_RECOVERY_FSTAB := device/samsung/p5100/rootdir/fstab.espresso10
 RECOVERY_FSTAB_VERSION := 2
 
 # TWRP
+DEVICE_RESOLUTION := 1280x800
 HAVE_SELINUX := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
