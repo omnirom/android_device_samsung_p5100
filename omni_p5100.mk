@@ -18,21 +18,25 @@
 # Inherit Omni GSM telephony parts
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-# Release name
-PRODUCT_RELEASE_NAME := p5100
-
-# Inherit some common Omni stuff.
+# Inherit common Omni configurations
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/samsung/p5100/full_p5100.mk)
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := p5100
-PRODUCT_NAME := omni_p5100
-PRODUCT_BRAND := samsung
+# Inherit device specific configurations
+$(call inherit-product, device/samsung/p5100/device.mk)
+
+# Device identifier. This must come after all inclusions
 PRODUCT_MODEL := GT-P5100
+PRODUCT_BRAND := samsung
+PRODUCT_NAME := omni_p5100
+PRODUCT_DEVICE := p5100
 PRODUCT_MANUFACTURER := samsung
 
 #Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=espresso10rfxx TARGET_DEVICE=espresso10rf BUILD_FINGERPRINT=samsung/espresso10rfxx/espresso10rf:4.0.3/IML74K/P5100XWALE2:user/release-keys PRIVATE_BUILD_DESC="espresso10rfxx-user 4.0.3 IML74K P5100XWALE2 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=espresso10rfxx \
+    TARGET_DEVICE=espresso10rf \
+    PRIVATE_BUILD_DESC="espresso10rfxx-user 4.0.3 IML74K P5100XWALE2 release-keys" \
+    BUILD_FINGERPRINT="samsung/espresso10rfxx/espresso10rf:4.0.3/IML74K/P5100XWALE2:user/release-keys"
