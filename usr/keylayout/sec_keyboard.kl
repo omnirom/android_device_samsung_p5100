@@ -6,7 +6,7 @@ key 215   EMAIL                 WAKE_DROPPED
 key 152   POWER                 WAKE_DROPPED
 key 224   BRIGHTNESS_DOWN       WAKE_DROPPED
 key 225   BRIGHTNESS_UP         WAKE_DROPPED
-key 113   MUTE                  WAKE_DROPPED
+key 113   VOLUME_MUTE           WAKE_DROPPED
 key 114   VOLUME_DOWN           WAKE_DROPPED
 key 115   VOLUME_UP             WAKE_DROPPED
 key 207   MEDIA_PLAY_PAUSE      WAKE_DROPPED
@@ -81,7 +81,7 @@ key 187   SIP_ON_OFF            WAKE_DROPPED
 key 217   SEARCH                WAKE_DROPPED
 key 190   VOICESEARCH           WAKE_DROPPED
 key 57    SPACE                 WAKE_DROPPED
-key 191   LANG                  WAKE_DROPPED
+key 191   LANGUAGE_SWITCH       WAKE_DROPPED
 key 192   QPANEL_ON_OFF         WAKE_DROPPED
 key 100   ALT_GR                WAKE_DROPPED
 #
