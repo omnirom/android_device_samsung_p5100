@@ -56,6 +56,7 @@ on fs
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
 # Restorecon
+    restorecon /efs/nv.log
     restorecon /efs/nv_data.bin
     restorecon /efs/nv_data.bin.md5
     restorecon /efs/.nv_core.bak
@@ -280,7 +281,6 @@ service pvrsrvinit /system/bin/pvrsrvinit
     class core
     user root
     group root
-    seclabel u:r:pvrsrvinit:s0
     oneshot
 
 service pvrsrvctl /system/vendor/bin/pvrsrvctl_SGX540_120 --start --no-module
