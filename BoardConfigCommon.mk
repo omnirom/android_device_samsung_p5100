@@ -18,6 +18,8 @@
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
 
+TARGET_OMAP4430_CPU_OVERCLOCK := true
+
 -include device/samsung/omap4-common/BoardConfigCommon.mk
 
 USE_CAMERA_STUB := true
