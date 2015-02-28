@@ -33,7 +33,3 @@ system/lib/libtvoutservice.so
 system/lib/libtiutils.so
 system/vendor/firmware/BCM4330.hcd
 system/vendor/firmware/ducati-m3.bin
-system/vendor/lib/drm/libdrmwvmplugin.so
-system/vendor/lib/libWVStreamControlAPI_L1.so
-system/vendor/lib/libwvdrm_L1.so
-system/vendor/lib/libwvm.so
