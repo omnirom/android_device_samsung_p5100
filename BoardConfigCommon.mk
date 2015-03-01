@@ -50,7 +50,6 @@ BOARD_EGL_CFG := device/samsung/p5100/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 
 # Boot Animation
-TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_USE_RGB565 := true
 
 # RIL
