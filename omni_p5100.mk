@@ -14,6 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# Use 44.1 kHz UI sounds
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13.mk)
 
 # Inherit Omni GSM telephony parts
 $(call inherit-product, vendor/omni/config/gsm.mk)
