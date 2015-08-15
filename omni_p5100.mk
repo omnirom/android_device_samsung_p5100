@@ -27,6 +27,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device specific configurations
 $(call inherit-product, device/samsung/p5100/device.mk)
 
+# OmniRom specific overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/p5100/overlay/custom
+DEVICE_PACKAGE_OVERLAYS += device/samsung/p5100/overlay/custom-common
+
 # Device identifier. This must come after all inclusions
 PRODUCT_MODEL := GT-P5100
 PRODUCT_BRAND := samsung
