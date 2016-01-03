@@ -14,38 +14,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Use 44.1 kHz UI sounds
-$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13.mk)
 
 # Inherit Omni GSM telephony parts
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-# bootanimation
+# Bootanimation
 TARGET_BOOTANIMATION_SIZE := 480x320
 
-# Inherit common Omni configurations
+# Inherit common Omni configuration
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
-
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Inherit device specific configurations
-$(call inherit-product, device/samsung/p5100/device.mk)
 
 # OmniRom specific overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/p5100/overlay/custom
 DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/custom-common
 
-# Device identifier. This must come after all inclusions
-PRODUCT_MODEL := GT-P5100
-PRODUCT_BRAND := samsung
-PRODUCT_NAME := omni_p5100
-PRODUCT_DEVICE := p5100
-PRODUCT_MANUFACTURER := samsung
+# Inherit device specific configuration
+$(call inherit-product, device/samsung/p5100/aosp_p5100.mk)
 
-#Set build fingerprint / ID / Prduct Name ect.
+# Device identifier. This must come after all inclusions
+PRODUCT_NAME := omni_p5100
+
+# Set build fingerprint / ID / Product Name etc.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=espresso10rfxx \
-    TARGET_DEVICE=espresso10rf \
     PRIVATE_BUILD_DESC="espresso10rfxx-user 4.2.2 JDQ39 P5100XXDNA1 release-keys" \
     BUILD_FINGERPRINT="samsung/espresso10rfxx/espresso10rf:4.2.2/JDQ39/P5100XXDNA1:user/release-keys"
