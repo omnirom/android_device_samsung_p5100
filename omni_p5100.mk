@@ -24,7 +24,6 @@ $(call inherit-product, vendor/omni/config/common_tablet.mk)
 # OmniRom specific overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/p5100/overlay/custom
 DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/custom-common
-DEVICE_PACKAGE_OVERLAYS += device/samsung/espresso-common/overlay/custom-p51xx
 
 # Inherit device specific configuration
 $(call inherit-product, device/samsung/p5100/aosp_p5100.mk)
