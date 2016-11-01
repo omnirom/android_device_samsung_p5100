@@ -38,3 +38,7 @@ PRODUCT_NAME := omni_p5100
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="espresso10rfxx-user 4.2.2 JDQ39 P5100XXDNA1 release-keys" \
     BUILD_FINGERPRINT="samsung/espresso10rfxx/espresso10rf:4.2.2/JDQ39/P5100XXDNA1:user/release-keys"
+
+# Packages
+PRODUCT_PACKAGES += \
+    SamsungServiceMode
